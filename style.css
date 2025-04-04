@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #6200ea;
+    color: #fff;
+}
+
+.codigo {
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    background: #fff;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+pre {
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+    overflow-x: auto;
+}
+
+.audio {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+audio {
+    width: 80%;
+}
