@@ -1,11 +1,18 @@
-// Animaciones simples
+// Animación al hacer scroll
 document.addEventListener('DOMContentLoaded', () => {
-    const codigos = document.querySelectorAll('.codigo');
-    codigos.forEach(codigo => {
-        codigo.style.opacity = 0;
-        codigo.style.transition = 'opacity 2s';
-        setTimeout(() => {
-            codigo.style.opacity = 1;
-        }, 500);
-    });
+    const elementosAnimados = document.querySelectorAll('.scroll-animation');
+
+    const mostrarElemento = () => {
+        elementosAnimados.forEach(el => {
+            const posicion = el.getBoundingClientRect().top;
+            const alturaPantalla = window.innerHeight;
+
+            if (posicion < alturaPantalla - 100) {
+                el.classList.add('visible');
+            }
+        });
+    };
+
+    window.addEventListener('scroll', mostrarElemento);
+    mostrarElemento(); // Para animar elementos visibles desde el inicio
 });
