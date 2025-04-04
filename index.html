@@ -3,43 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplos de Código</title>
+    <title>Ejemplos de Código Interactivos</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Ejemplos de Código</h1>
-        <p>Aprende Python y pseudocódigo con estilo.</p>
+        <h1>Ejemplos de Código Interactivos</h1>
+        <p>Explora Python y pseudocódigo con animaciones y música.</p>
     </header>
 
     <main>
-        <section class="codigo">
-            <h2>Python</h2>
+        <section class="codigo scroll-animation">
+            <h2>Python - Ejemplo 1</h2>
             <pre><code class="language-python">
-# Ejemplo de código en Python
-def saludo():
-    print("Hola, mundo!")
+# Cálculo de suma
+def suma(a, b):
+    return a + b
+print(suma(5, 7))
             </code></pre>
         </section>
 
-        <section class="codigo">
-            <h2>PSeInt</h2>
+        <section class="codigo scroll-animation">
+            <h2>PSeInt - Ejemplo 1</h2>
             <pre><code class="language-pseudocode">
-# Ejemplo en pseudocódigo
-Algoritmo Saludo
-  Escribir "Hola, mundo!"
+# Calcular suma en PSeInt
+Algoritmo Suma
+    Definir a, b Como Entero
+    Escribir "Introduce dos números"
+    Leer a, b
+    Escribir "La suma es: ", a + b
 FinAlgoritmo
             </code></pre>
         </section>
 
+        <section class="codigo scroll-animation">
+            <h2>Python - Ejemplo 2</h2>
+            <pre><code class="language-python">
+# Verificar número par
+def es_par(numero):
+    return numero % 2 == 0
+print(es_par(10))  # True
+            </code></pre>
+        </section>
+
+        <section class="codigo scroll-animation">
+            <h2>PSeInt - Ejemplo 2</h2>
+            <pre><code class="language-pseudocode">
+# Verificar si un número es par
+Algoritmo EsPar
+    Definir numero Como Entero
+    Escribir "Introduce un número"
+    Leer numero
+    Si numero MOD 2 = 0 Entonces
+        Escribir "Es par"
+    SiNo
+        Escribir "No es par"
+    FinSi
+FinAlgoritmo
+            </code></pre>
+        </section>
+
+        <!-- Añade más secciones de ejemplos según sea necesario -->
+
         <section class="audio">
             <h3>Música Relajante</h3>
-            <audio controls autoplay loop>
+            <audio autoplay loop>
                 <source src="tu-musica.mp3" type="audio/mpeg">
                 Tu navegador no soporta audio.
             </audio>
         </section>
     </main>
 </body>
-</html>
+                </html>
